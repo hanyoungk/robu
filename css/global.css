@@ -1,33 +1,40 @@
-/* Global Styles */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Instrument Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-header .logo {
-    flex-grow: 1; /* Center logo with space allocation */
-    text-align: center;
+header .logo img {
+    width: 80px;
 }
 
-header .logo img {
-    width: 80px; /* Adjust logo size */
+header .logo {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    /* text-align: center; */
 }
 
 header {
+    font-family: 'Instrument Sans', Arial, sans-serif;
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #B4BDA1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 70px;
+    
 }
 
 header nav {
     display: flex;
-    flex-grow: 2; /* Distribute space */
+    flex-grow: 2; 
     justify-content: space-between;
+    padding-right: 20px;
 }
 
 header nav.left {
@@ -36,13 +43,14 @@ header nav.left {
 
 header nav.right {
     justify-content: flex-end;
-    gap: 20px; /* Space between menu items */
+    gap: 30px; 
+    
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 30px;
 }
 
 nav a {
@@ -52,5 +60,24 @@ nav a {
 }
 
 nav a:hover {
-    color: #007BFF;
+    color: #5888bc;
+}
+
+
+footer {
+    background-color: #B4BDA1; 
+    color: #333;
+    text-align: center;
+    padding: 10px 0; 
+    font-family: 'Instrument Sans', Arial, sans-serif;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+footer p {
+    margin: 0; 
+    font-size: 1rem; 
+    font-weight: 600;
 }

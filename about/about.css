@@ -1,10 +1,51 @@
-/* About Page Specific Styles */
+
 main {
     text-align: center;
-    background-color: #f9f9f9;
-    padding: 20px;
 }
 
-header {
-    
+
+body {
+    font-family: 'Instrument Sans', Arial, sans-serif;
+}
+
+/* .japanese-text {
+    font-family: 'Kosugi Maru', 'Kosugi', 'Arial', sans-serif;
+} */
+.about-content {
+    padding: 70px;
+    background: #D5D8CD; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.about-section {
+    margin-left: 50px;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left; 
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #444;
+    margin-top: 100px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555; 
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }

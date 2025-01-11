@@ -3,33 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Landing Page</title>
     <link rel="stylesheet" href="css/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #B4BDA1;
+            position: relative;
+        }
+
+        .robuTitle {
+            text-align: center;
+        }
+
+        .robuTitle img {
+            max-width: 400px;
+        }
+
+        .corner-image {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            max-width: 250px;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav class="left">
-            <ul>
-                <li><a href="about/about.html">About</a></li>
-            </ul>
-        </nav>
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/robu_logo.png" alt="Logo">
-            </a>
-        </div>
-        <nav class="right">
-            <ul>
-                <li><a href="menu/menu.html">Menu</a></li>
-                <li><a href="shop/shop.html">Shop</a></li>
-                <li><a href="cart/cart.html">Cart</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to Our Website</h1>
-        <p>This is the home page. Navigate using the header links.</p>
-    </main>
-    <script src="js/global.js"></script>
+    <div class="robuTitle">
+        <img src="assets/ROBU CAFE.png" alt="Robu Cafe Title">
+    </div>
+    <img class="corner-image" src="assets/robu1.png" alt="Corner Image">
+
+    <script>
+        // Redirect to About page on click or spacebar press
+        document.body.addEventListener('click', () => {
+            window.location.href = "about/about.html";
+        });
+
+        document.body.addEventListener('keydown', (e) => {
+            if (e.code === 'Space') {
+                window.location.href = "about/about.html";
+            }
+        });
+    </script>
 </body>
 </html>

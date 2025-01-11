@@ -1,6 +1,32 @@
-/* menu Page Specific Styles */
-main {
-    text-align: center;
-    background-color: #f9f9f9;
+
+.menu-layout {
+    display: flex; /* Enable horizontal layout */
+    justify-content: space-between; /* Space between the two sections */
+    align-items: flex-start; /* Align items at the top */
     padding: 20px;
+    gap: 20px;  
+}
+
+
+.menu-section {
+    flex: 1; 
+    max-width: 45%; 
+}
+
+.menu-section img {
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+
+.additional-section {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.additional-section img{
+    width: 100%; 
 }
