@@ -5,6 +5,15 @@ body {
     padding: 0;
 }
 
+header .logo {
+    flex-grow: 1; /* Center logo with space allocation */
+    text-align: center;
+}
+
+header .logo img {
+    width: 80px; /* Adjust logo size */
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -12,10 +21,27 @@ header {
     padding: 10px 20px;
     background-color: #B4BDA1;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 70px;
+}
+
+header nav {
+    display: flex;
+    flex-grow: 2; /* Distribute space */
+    justify-content: space-between;
+}
+
+header nav.left {
+    justify-content: flex-start;
+}
+
+header nav.right {
+    justify-content: flex-end;
+    gap: 20px; /* Space between menu items */
 }
 
 nav ul {
     display: flex;
+    list-style: none;
     gap: 20px;
 }
 
